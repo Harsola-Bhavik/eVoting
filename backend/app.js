@@ -25,7 +25,7 @@ connectDB();
 app.use('/api/auth', authRoutes);
 
 // Admin routes (protected)
-app.use('/api/admin', authenticateToken, adminRoutes); // Protect admin routes with authentication middleware
+app.use('/api/admin',adminRoutes); // Protect admin routes with authentication middleware
 
 // Form routes
 app.use('/api/form', formRoutes);
